@@ -1,0 +1,138 @@
+@import url(../vendors/semantic/semantic.min.css);
+/*Mixins*/
+html, body {
+  height: 100%;
+  min-height: 100%;
+  background-image: url("../images/background.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed; }
+
+h1, h2, h3, h4, h5, h6, p, a, label, button, span, div, li, input {
+  font-family: Lato, 'Helvetica Neue', Arial, Helvetica, sans-serif !important; }
+
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+  display: none !important; }
+
+/*Semantic UI Reset*/
+.ui.menu .item:before, .ui.menu .item.active:before {
+  background-color: transparent; }
+
+.ui.menu .item.active {
+  background-color: transparent; }
+
+.fitted {
+  padding: 0 !important; }
+
+.clear-float, .clear-float:before, .clear-float:after {
+  clear: both;
+  display: table;
+  content: ""; }
+
+.pusher {
+  min-height: 100%;
+  position: relative;
+  padding-bottom: 150px; }
+
+#Header {
+  background-size: cover;
+  height: 309px;
+  padding-top: 30px;
+  background-position-y: -80px;
+  background-repeat: no-repeat; }
+  #Header .ui.grid.container .row #Logo {
+    width: 800px; }
+  #Header .ui.grid.container .row #MainMenu, #Header .ui.grid.container .row .social-media-links {
+    background-color: transparent;
+    border: none;
+    box-shadow: none; }
+    #Header .ui.grid.container .row #MainMenu .item, #Header .ui.grid.container .row .social-media-links .item {
+      font-size: 13px;
+      margin-right: 10px;
+      text-transform: uppercase; }
+      #Header .ui.grid.container .row #MainMenu .item, #Header .ui.grid.container .row .social-media-links .item, #Header .ui.grid.container .row #MainMenu .item:hover, #Header .ui.grid.container .row .social-media-links .item:hover, #Header .ui.grid.container .row #MainMenu .item:active, #Header .ui.grid.container .row .social-media-links .item:active {
+        background-color: transparent; }
+      #Header .ui.grid.container .row #MainMenu .item.actived, #Header .ui.grid.container .row .social-media-links .item.actived {
+        font-weight: 900; }
+  #Header .ui.grid.container .row .social-media-links {
+    display: -webkit-box;
+    display: flex;
+    -moz-justify-content: space-between;
+    -webkit-box-pack: justify;
+    justify-content: space-between; }
+    #Header .ui.grid.container .row .social-media-links .item {
+      margin-right: initial;
+      font-size: 17px; }
+  #Header .ui.grid.container .row #LoginContainer {
+    display: -webkit-box;
+    display: flex;
+    -moz-justify-content: flex-end;
+    -webkit-box-pack: end;
+    justify-content: flex-end;
+    align-content: center; }
+    #Header .ui.grid.container .row #LoginContainer #LoginBtn {
+      align-self: center;
+      text-transform: uppercase; }
+  #Header .ui.grid.container .row #UserDropdownContainer {
+    display: -webkit-box;
+    display: flex;
+    -moz-justify-content: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -moz-align-items: center;
+    -webkit-box-align: center;
+    align-items: center;
+    font-size: 15px; }
+    #Header .ui.grid.container .row #UserDropdownContainer .dropdown.icon {
+      line-height: 1.2; }
+
+#SignUpModal, #LoginModal {
+  width: 400px;
+  text-align: center;
+  border-top: solid 7px #f0cd00;
+  left: 0px;
+  right: 0px;
+  margin: auto; }
+  #SignUpModal .header, #LoginModal .header {
+    font-size: 27px; }
+  #SignUpModal .note, #LoginModal .note {
+    font-size: 16px;
+    font-style: italic; }
+  #SignUpModal .field, #LoginModal .field {
+    font-size: 16px;
+    margin-bottom: 23px;
+    position: relative; }
+    #SignUpModal .field .messages, #LoginModal .field .messages {
+      position: absolute;
+      font-size: 10px;
+      left: 0;
+      font-style: italic;
+      font-size: 11px; }
+      #SignUpModal .field .messages.error, #LoginModal .field .messages.error {
+        color: #ff0000; }
+  #SignUpModal .messages.error, #LoginModal .messages.error {
+    margin-top: 0;
+    color: #ff0000; }
+  #SignUpModal #SignUpBtn, #SignUpModal #LoginBtn, #LoginModal #SignUpBtn, #LoginModal #LoginBtn {
+    display: block;
+    font-size: 17px;
+    width: 100%; }
+
+#Footer {
+  position: absolute;
+  bottom: 0; }
+  #Footer .ui.fluid.grid.container {
+    width: 100% !important;
+    color: #ffffff; }
+    #Footer .ui.fluid.grid.container #FooterImage {
+      background-image: url("../images/background_footer.png");
+      background-size: cover;
+      background-repeat: no-repeat;
+      min-height: 159px; }
+    #Footer .ui.fluid.grid.container #FooterText {
+      background-color: #458320; }
+  #Footer p {
+    width: 100%;
+    text-align: center; }
+
+/*# sourceMappingURL=main.css.map */

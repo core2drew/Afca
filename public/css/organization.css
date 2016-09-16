@@ -1,0 +1,25 @@
+/*Mixins*/
+#Organization {
+  border-top: 7px solid #f0cd00;
+  background-color: #fff;
+  position: relative;
+  top: -55px; }
+  #Organization h1.ui.header {
+    width: 100%;
+    margin-top: 25px;
+    font-size: 32px; }
+  #Organization .ui.grid .row {
+    margin: 0 20px; }
+    #Organization .ui.grid .row .column .club-level {
+      margin-top: 20px; }
+    #Organization .ui.grid .row .column .segment {
+      margin: 0 auto; }
+      #Organization .ui.grid .row .column .segment h4.ui.header {
+        font-size: 18px;
+        margin-bottom: 10px; }
+      #Organization .ui.grid .row .column .segment p {
+        font-size: 16px;
+        text-indent: 30px;
+        text-align: justify; }
+
+/*# sourceMappingURL=organization.css.map */

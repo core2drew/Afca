@@ -1,0 +1,55 @@
+/*Mixins*/
+#ContactUs {
+  position: relative;
+  top: -55px;
+  padding: 20px; }
+  #ContactUs h1.ui.header {
+    margin-top: 25px;
+    font-size: 32px; }
+  #ContactUs .segment {
+    margin: 20px; }
+    #ContactUs .segment h4.ui.header {
+      font-size: 18px;
+      margin-bottom: 10px; }
+    #ContactUs .segment p {
+      font-size: 16px;
+      text-indent: 30px;
+      text-align: justify; }
+  #ContactUs #Map {
+    height: 475px; }
+  #ContactUs .details-container {
+    display: -webkit-box;
+    display: flex;
+    -moz-align-items: center;
+    -webkit-box-align: center;
+    align-items: center;
+    margin-bottom: 10px; }
+    #ContactUs .details-container .icon {
+      font-size: 22px;
+      margin-right: 16px; }
+      #ContactUs .details-container .icon.mobile {
+        font-size: 32px;
+        width: 26px; }
+      #ContactUs .details-container .icon.mail {
+        font-size: 18px;
+        width: 27px; }
+    #ContactUs .details-container .details {
+      font-size: 16px; }
+  #ContactUs #InquriesFormContainer {
+    background-color: #ededed; }
+    #ContactUs #InquriesFormContainer .ui.segment {
+      margin: 0; }
+      #ContactUs #InquriesFormContainer .ui.segment, #ContactUs #InquriesFormContainer .ui.segment:after, #ContactUs #InquriesFormContainer .ui.segment:before {
+        clear: both;
+        display: block;
+        content: ''; }
+      #ContactUs #InquriesFormContainer .ui.segment p {
+        text-indent: 0; }
+      #ContactUs #InquriesFormContainer .ui.segment textarea {
+        height: 6em;
+        min-height: 5em;
+        resize: none; }
+      #ContactUs #InquriesFormContainer .ui.segment #SendBtn {
+        float: right; }
+
+/*# sourceMappingURL=contact.css.map */

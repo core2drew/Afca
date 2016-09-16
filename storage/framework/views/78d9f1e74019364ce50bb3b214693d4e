@@ -1,0 +1,36 @@
+<?php $__env->startSection('styles'); ?>
+<link rel="stylesheet" type="text/css" href="<?php echo e(asset('css/organization.css')); ?>">
+<?php $__env->appendSection(); ?>
+
+
+<?php $__env->startSection('body'); ?>
+    <div class="ui container" id="Organization">
+        <div class="ui column grid">
+            <?php if(Request::is('organization/elementary')): ?>
+                <div class="row">
+                    <h1 class="ui center aligned header">Elementary Organization</h1>
+                </div>
+                <div class="row">
+                    <div class="column">
+                        <div class="ui raised compact segment">
+                            <img src="<?php echo e(asset('images/organization/elementary/elem_org.jpg')); ?>" class="ui image big"/>
+                        </div>
+                    </div>
+                </div>
+
+            <?php elseif(Request::is('organization/highschool')): ?>
+                <div class="row">
+                    <h1 class="ui center aligned header">High School Organization</h1>
+                </div>
+                <div class="row">
+                    <div class="column">
+                        <div class="ui raised compact segment">
+                            <img src="<?php echo e(asset('images/organization/highschool/highschool_org.jpg')); ?>" class="ui image big"/>
+                        </div>
+                    </div>
+                </div>
+            <?php endif; ?>
+        </div>
+    </div>
+<?php $__env->stopSection(); ?>
+<?php echo $__env->make('templates.master', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

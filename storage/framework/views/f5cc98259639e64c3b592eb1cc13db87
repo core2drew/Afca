@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html ng-app="Afca">
+<head>
+	<title>AFCA - Abraham's Flock Christian Academy</title>
+	<link rel="shortcut icon" href="<?php echo e(asset('images/favicon.ico')); ?>">
+	<link rel="stylesheet" type="text/css" href="<?php echo e(asset('css/main.css')); ?>">
+
+	<?php echo $__env->yieldContent('styles'); ?>
+
+	<link href="https://fonts.googleapis.com/css?family=Lato:400,700,900" rel="stylesheet">
+</head>
+<body ng-controller="MainController as mainCtrl" ng-cloak>
+	<div class="pusher">
+		<?php echo $__env->make("components.header", array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
+		<?php echo $__env->yieldContent("body"); ?>
+		<?php echo $__env->make("components.footer", array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
+	</div>
+
+	<script type="text/javascript" src="<?php echo e(asset('vendors/jquery/jquery.min.js')); ?>"></script>
+	<script type="text/javascript" src="<?php echo e(asset('vendors/angular/angular.js')); ?>"></script>
+	<script type="text/javascript" src="<?php echo e(asset('js/afcaApp.js')); ?>"></script>
+	<script type="text/javascript" src="<?php echo e(asset('js/controllers/mainController.js')); ?>"></script>
+	<script type="text/javascript" src="<?php echo e(asset('vendors/semantic/semantic.min.js')); ?>"></script>
+	<script type="text/javascript" src="<?php echo e(asset('js/main.js')); ?>"></script>
+	<?php echo $__env->yieldContent('scripts'); ?>
+</body>
+</html>

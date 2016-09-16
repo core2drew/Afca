@@ -1,0 +1,11 @@
+<div class="ui modal long small" id="AlumniDetailsModal">
+    <i class="close icon"></i>
+    <div class="header">
+        {{galleryCtrl.currentAlumniModalDetails.name}}
+    </div>
+    <div class="content">
+        <div class="description">
+            <p>{{galleryCtrl.currentAlumniModalDetails.story}}</p>
+        </div>
+    </div>
+</div>

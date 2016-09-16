@@ -1,0 +1,78 @@
+<?php $__env->startSection('styles'); ?>
+<link rel="stylesheet" type="text/css" href="<?php echo e(asset('css/clubs.css')); ?>">
+<?php $__env->appendSection(); ?>
+
+<?php $__env->startSection('body'); ?>
+    <div class="ui container" id="Clubs" ng-controller="ClubController as ctrl">
+        <?php if(Request::is('clubs/elementary')): ?>
+            <div class="ui two column grid">
+                <div class="row">
+                    <h1 class="ui center aligned header">Elementary Clubs</h1>
+                </div>
+                <div class="row">
+                    <div class="column">
+                        <a class="ui raised compact segment" ng-click="ctrl.showClubModal($event)">
+                            <img src="<?php echo e(asset('images/clubs/elementary/math.jpg')); ?>" class="ui image big"/>
+                        </a>
+                    </div>
+                    <div class="column">
+                        <a class="ui raised compact segment" ng-click="ctrl.showClubModal($event)">
+                            <img src="<?php echo e(asset('images/clubs/elementary/science.jpg')); ?>" class="ui image big"/>
+                        </a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="column">
+                        <a class="ui raised compact segment" ng-click="ctrl.showClubModal($event)">
+                            <img src="<?php echo e(asset('images/clubs/elementary/english.jpg')); ?>" class="ui image big"/>
+                        </a>
+                    </div>
+                    <div class="column">
+                        <div class="ui raised compact segment" ng-click="ctrl.showClubModal($event)">
+                            <img src="<?php echo e(asset('images/clubs/elementary/computer.jpg')); ?>" class="ui image big"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <?php elseif(Request::is('clubs/highschool')): ?>
+
+            <div class="ui two column grid">
+                <div class="row">
+                    <h1 class="ui center aligned header">High School Clubs</h1>
+                </div>
+                <div class="row">
+                    <div class="column">
+                        <a class="ui raised compact segment" ng-click="ctrl.showClubModal($event)">
+                            <img src="<?php echo e(asset('images/clubs/highschool/math.jpg')); ?>" class="ui image big"/>
+                        </a>
+                    </div>
+                    <div class="column">
+                        <a class="ui raised compact segment" ng-click="ctrl.showClubModal($event)">
+                            <img src="<?php echo e(asset('images/clubs/highschool/science.jpg')); ?>" class="ui image big"/>
+                        </a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="column">
+                        <a class="ui raised compact segment" ng-click="ctrl.showClubModal($event)">
+                            <img src="<?php echo e(asset('images/clubs/highschool/english.jpg')); ?>" class="ui image big"/>
+                        </a>
+                    </div>
+                    <div class="column">
+                        <a class="ui raised compact segment" ng-click="ctrl.showClubModal($event)">
+                            <img src="<?php echo e(asset('images/clubs/highschool/computer.jpg')); ?>" class="ui image big"/>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        <?php endif; ?>
+        <?php echo $__env->make("modals.club_modal", array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
+    </div>
+<?php $__env->stopSection(); ?>
+
+<?php $__env->startSection('scripts'); ?>
+<script type="text/javascript" src="<?php echo e(asset('js/controllers/clubController.js')); ?>"></script>
+<?php $__env->appendSection(); ?>
+
+
+<?php echo $__env->make('templates.master', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

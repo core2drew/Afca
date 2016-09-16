@@ -1,0 +1,17 @@
+<?php $__env->startSection('styles'); ?>
+<link rel="stylesheet" type="text/css" href="<?php echo e(asset('vendors/owl/assets/owl.carousel.css')); ?>">
+<link rel="stylesheet" type="text/css" href="<?php echo e(asset('css/home.css')); ?>">
+<?php $__env->appendSection(); ?>
+
+<?php $__env->startSection("body"); ?>
+	<?php echo $__env->make("news_events.slider", array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
+	<?php echo $__env->make("news_events.news_upcoming_events", array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
+<?php $__env->stopSection(); ?>
+
+<?php $__env->startSection('scripts'); ?>
+<script type="text/javascript" src="<?php echo e(asset('vendors/ng-repeat-owl-carousel/ngRepeatOwlCarousel.js')); ?>"></script>
+<script type="text/javascript" src="<?php echo e(asset('vendors/owl/owl.carousel.js')); ?>"></script>
+<script type="text/javascript" src="<?php echo e(asset('js/controllers/newsController.js')); ?>"></script>
+<script type="text/javascript" src="<?php echo e(asset('js/controllers/eventsController.js')); ?>"></script>
+<?php $__env->appendSection(); ?>
+<?php echo $__env->make('templates.master', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

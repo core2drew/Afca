@@ -1,0 +1,22 @@
+{
+  "name": "afca",
+  "description": "",
+  "main": "gulpfile.js",
+  "authors": [
+    "core2Drew"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "semantic": "semantic-ui#^2.2.2",
+    "angular": "angularjs#^1.5.8",
+    "jquery": "^3.1.0"
+  }
+}

@@ -1,0 +1,26 @@
+<?php $__env->startSection('styles'); ?>
+<link rel="stylesheet" type="text/css" href="<?php echo e(asset('css/gallery.css')); ?>">
+<?php $__env->appendSection(); ?>
+
+<?php $__env->startSection("body"); ?>
+    <div class="ui container" id="Gallery" ng-controller="GalleryController as galleryCtrl">
+        <?php if(Request::is('gallery/students/elementary')): ?>
+            <?php echo $__env->make('gallery.elementary', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
+        <?php elseif(Request::is('gallery/students/highschool')): ?>
+            <?php echo $__env->make('gallery.highschool', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
+        <?php elseif(Request::is('gallery/alumni')): ?>
+            <?php echo $__env->make('gallery.alumni', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
+        <?php elseif(Request::is('gallery/jsc-nsc-videos')): ?>
+            <?php echo $__env->make('gallery.jsc', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
+        <?php elseif(Request::is('gallery/school-activities')): ?>
+            <?php echo $__env->make('gallery.school_activity_albums', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
+        <?php elseif(Request::is('gallery/school-activities/*')): ?>
+            <?php echo $__env->make('gallery.album', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
+        <?php endif; ?>
+    </div>
+<?php $__env->stopSection(); ?>
+
+<?php $__env->startSection('scripts'); ?>
+<script type="text/javascript" src="<?php echo e(asset('js/controllers/galleryController.js')); ?>"></script>
+<?php $__env->appendSection(); ?>
+<?php echo $__env->make('templates.master', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

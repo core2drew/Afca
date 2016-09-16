@@ -1,0 +1,21 @@
+/*Mixins*/
+#AboutUs {
+  border-top: 7px solid #f0cd00;
+  background-color: #fff;
+  position: relative;
+  top: -55px; }
+  #AboutUs h1.ui.header {
+    margin-top: 25px;
+    font-size: 32px; }
+  #AboutUs .segment {
+    margin: 20px; }
+    #AboutUs .segment h4.ui.header {
+      font-size: 18px;
+      margin-bottom: 10px; }
+    #AboutUs .segment p {
+      font-size: 16px;
+      text-indent: 30px;
+      margin-bottom: 0;
+      text-align: justify; }
+
+/*# sourceMappingURL=about.css.map */
