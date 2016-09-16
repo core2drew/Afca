@@ -1,0 +1,92 @@
+@import "mixin.scss";
+
+#Gallery {
+  border-top: 7px solid #f0cd00;
+  background-color: #fff;
+  position: relative;
+  top: -55px;
+  padding: 20px 25px;
+
+  h1.ui.header {
+    font-size: 42px;
+  }
+
+  .segment {
+    margin: 20px;
+    h4.ui.header {
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+    p {
+      font-size: 16px;
+      text-indent: 30px;
+      text-align: justify;
+    }
+  }
+
+  .gallery-images-container {
+    margin-bottom: 50px;
+    margin-top: 50px;
+
+    .ui.card {
+      .content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .header {
+          text-align: center;
+          font-size: 15px;
+        }
+      }
+      &.raised {
+        .content {
+          background-color: #16ab39;
+          .header {
+            color: #fad805;
+          }
+        }
+      }
+      &.album {
+        .image {
+          min-height: 200px;
+          background-size: cover;
+        }
+      }
+
+      &.album-image {
+        .image {
+          img {
+            min-height: 250px;
+            background-size: cover;
+          }
+        }
+      }
+    }
+  }
+}
+
+#AlumniDetailsModal {
+  .close {
+    top: 0;
+    right: 0;
+    color: #000;
+    font-size: 22px;
+    padding-top: 7px;
+  }
+  .content {
+    .description {
+      padding: 0;
+    }
+  }
+}
+
+#AlbumModal
+{
+  .image.content
+  {
+    .image
+    {
+      width:100%;
+    }
+  }
+}

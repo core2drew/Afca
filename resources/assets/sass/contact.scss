@@ -1,0 +1,79 @@
+@import "mixin.scss";
+
+#ContactUs {
+  border-top: 7px solid #f0cd00;
+  background-color: #fff;
+  position: relative;
+  top: -55px;
+  padding: 20px;
+  h1.ui.header {
+    margin-top: 25px;
+    font-size: 32px;
+  }
+
+  .segment {
+    margin: 20px;
+    h4.ui.header {
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+    p {
+      font-size: 16px;
+      text-indent: 30px;
+      text-align: justify;
+    }
+  }
+
+  #Map {
+    height: 475px;
+  }
+
+  .details-container {
+    @include flexbox();
+    @include align-items(center);
+    margin-bottom: 10px;
+
+    .icon {
+      font-size: 22px;
+      margin-right: 16px;
+
+      &.mobile {
+        font-size: 32px;
+        width: 26px;
+      }
+
+      &.mail {
+        font-size: 18px;
+        width: 27px;
+      }
+    }
+
+    .details {
+      font-size: 16px;
+    }
+  }
+
+  #InquriesFormContainer {
+
+    background-color: #ededed;
+    .ui.segment {
+      @include clearfloat();
+
+      margin: 0;
+      p {
+        text-indent: 0;
+      }
+
+      textarea {
+        height: 6em;
+        min-height: 5em;
+        resize: none;
+      }
+
+      #SendBtn {
+        float: right;
+      }
+
+    }
+  }
+}
